@@ -1,0 +1,65 @@
+.vectors-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: hidden auto;
+  margin: 2rem -.6rem;
+  max-height: calc(100vh - 200px);
+  height: auto;
+}
+.children-menu {
+  display: flex;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  padding: 1rem .2rem;
+  width: 100%;
+  text-transform: uppercase;
+}
+.child-item {
+  color: #b4bedb;
+  padding: .8rem 1rem;
+}
+.child-item:hover {
+  background-color: rgba(230, 234, 243, 0.4);
+  border-radius: 10px;
+}
+.child-item.selected {
+  color: #000;
+}
+.item {
+  margin: 0;
+  overflow: hidden;
+}
+
+.item svg {
+  border-radius: 1.25rem;
+  fill: none;
+  height: 6.5rem;
+  transform-origin: center center;
+  width: 6.5rem;
+}
+
+.item.selected,
+.item:hover {
+  border-radius: 1.25rem;
+  background-color: rgba(230, 234, 243, 0.4);
+}
+.item.empty {
+  border-radius: 1.25rem;
+}
+
+@media (max-width: 50rem) {
+  .vectors-list {
+    flex-wrap: nowrap;
+    overflow: auto hidden;
+    justify-content: flex-start;
+    max-height: 100%;
+    flex-direction: row;
+    margin: 0 3px;
+  }
+
+  .item {
+    overflow: visible;
+  }
+}

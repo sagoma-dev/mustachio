@@ -1,0 +1,49 @@
+.download-wrapper {
+  background-color: #000000;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  overflow: hidden;
+  z-index: 20;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+.download-wrapper h2 {
+  font-family: 'buffon', serif;
+  font-weight: 300;
+  text-transform: lowercase;
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 3.4rem;
+}
+
+.download-wrapper .download-button {
+  align-self: auto;
+  height: 100%;
+}
+
+.download-wrapper .download-arrow path {
+  fill: #fff;
+}
+
+.download-wrapper .download-text,
+.download-wrapper .download-list {
+  display: block;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.download-wrapper .download-text{
+  margin: 3rem 0;
+}
+.download-wrapper .download-list li {
+  margin: 0 0 2rem;
+}
+
+.download-wrapper .legal {
+  font-size: .9rem;
+}

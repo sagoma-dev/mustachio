@@ -1,0 +1,90 @@
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  overflow: hidden;
+  height: 100%;
+  padding: 0 .6rem;
+  position: fixed;
+  z-index: 10;
+  left: 0; 
+}
+
+.App-header a{
+  text-decoration: none!important;
+}
+
+h1 {
+  color: #000000;
+  font-family: 'karla', sans-serif;
+  font-size: 3.8rem;
+  font-weight: 300;
+  margin: 0;
+  padding: 1.5rem 0;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+}
+
+.download-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.download-arrow {
+  width: 2.5rem;
+}
+
+.download-text{
+  margin: 1.5rem 0;
+  letter-spacing: 0.02rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+@media (min-width: 50rem) {
+  .download-list {
+    margin-bottom: -7.5rem;
+    transition: margin-bottom .5s ease;
+  }
+  .download-button:hover .download-list {
+    margin-bottom: 2rem;
+  }
+}
+.download-list li {
+  margin: 1rem 0;
+}
+
+@media (max-width: 50rem) {
+  .App-header {
+    position: absolute;
+    padding: 0.8rem;
+    z-index: 10;
+  }
+  h1 {
+    display:block;
+    visibility:hidden;
+    transform: none;
+    writing-mode: initial;
+    padding: 0 .5rem;
+    font-size: 3rem;
+  }
+  h1::first-letter {
+    visibility: visible;
+  }
+  .download-list{
+    margin-bottom: -11rem;
+    transition: margin-bottom .5s ease;
+  }
+  .visible .download-list{
+    margin-bottom: 0rem;
+  }
+  .download-button {
+    align-self: flex-start;
+    margin: 0 -.5rem;
+  }
+}

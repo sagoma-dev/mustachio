@@ -1,0 +1,43 @@
+.color-selector-container {
+  display: flex;
+  margin: 1rem;
+}
+
+.color-item {
+  border-radius: 50%;
+  max-width: 2rem;
+  width: 100%;
+  margin: 0 .6rem 0 0;
+  border: .1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.color-item.selected,
+.color-item:hover {
+  border: .2rem solid rgba(0, 0, 0, 0.1);
+}
+
+.color-picker {
+  border-right: .1rem solid #e6eaf3;
+}
+
+.separator {
+  background-color: #B4BEDB;
+  height: 2rem;
+  width: .1rem;
+  margin: 0 .6rem 0 0;
+}
+
+.color-item.default {
+  background: url(../../assets/img/colorBG.png) center/cover no-repeat;
+  border: none;
+}
+
+.color-item.default:hover{
+  border: none;
+}
+
+#picker {
+  position: absolute;
+  top: 5rem;
+  visibility: hidden;
+}
