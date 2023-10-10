@@ -44,7 +44,7 @@ const ParametricMenu = ({setSectionSelected}) => {
           colors = {state.background.paletteSelected}/>
         {option.section!=='background' && <SVGsList feature={state[option.section]} changeTypeSelected={changeTypeSelected} changeSubsectionsSelected={changeSubsectionsSelected} />}
       </div>
-      <p className="legal">This is a project coded by <a href="https://github.com/sagomadev" target="_blank">sagomadev</a>, <a href="https://github.com/superalex" target="_blank">superalex</a> and designed by <a href="https://www.instagram.com/estdubois/?hl=es">Ester Latorre</a> made during the piweek</p>
+      <p className="legal">This is a project coded by <a href="https://github.com/sagomadev" target="_blank">sagomadev</a>, <a href="https://twitter.com/reversotenebros" target="_blank">@reversotenebros</a>, <a href="https://github.com/superalex" target="_blank">superalex</a> and designed by <a href="https://www.instagram.com/estdubois/?hl=es">Ester Latorre</a> made during the piweek</p>
     </div>
   )
 }
